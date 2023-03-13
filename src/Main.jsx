@@ -1,22 +1,17 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import News from "./components/News/News";
 import Main from "./Main";
-import { Route, Routes } from "react-router-dom";
-function App() {
+import { Link } from 'react-router-dom';
+export default function () {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Main />} />
-      </Routes>
+    <div>
       <Header />
       <Banner />
       <News />
-      
     </div>
   );
 }
-
-export default App;

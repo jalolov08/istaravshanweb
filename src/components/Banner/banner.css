@@ -1,0 +1,215 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.banner {
+  display: flex;
+}
+.banner_large {
+  
+  margin-left: 55px;
+  background-repeat: no-repeat;
+  background-size: cover  ;
+ background-image: url(./banner_large.png);
+  box-shadow: inset 0px -100px 100px rgba(6, 4, 4, 0.73);
+  width: 880px;
+  height: 660px;
+  transition: 400ms ease-in-out;
+}
+.banner_large_title {
+  margin-bottom: 0px;
+  margin-top: 530px;
+  margin-left: 40px;
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+.banner_large_date {
+  font-family: "Carme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+.arr{
+  text-align: center  ;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: 300ms;
+}
+.banner_small {
+  overflow: hidden;
+  margin-left: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 540px;
+  transition: 400ms ease-in;
+  height: 400px;
+  background: url(./banner_small.png);
+  box-shadow: inset 0px -80px 80px rgba(0, 0, 0, 0.8);
+}
+.banner_large:hover {
+  transition: 400ms ease-in;
+  box-shadow: inset 0px -140px 200px rgba(6, 4, 4, 0.73);
+}
+.banner_small:hover {
+  transition: 400ms ease-in;
+  box-shadow: inset 0px -140px 200px rgba(6, 4, 4, 0.73);
+}
+.banner_small_date {
+  font-family: Carme;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 0px;
+}
+.banner_small_title {
+  margin-bottom: 0px;
+  margin-top: 230px;
+  margin-left: 40px;
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+.banner_cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.banner_consultation {
+  margin-top: 15px;
+  width: 540px;
+  margin-left: 15px;
+  height: 245px;
+  display: flex;
+
+  background: #f7f5f5;
+}
+.banner_cons_btn {
+  width: 340px;
+  height: 46px;
+  margin-left: 22px;
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  display: flex;
+  border: none;
+  transition: 300ms;
+  justify-content: center;
+  align-items: center;
+  background: rgba(9, 46, 243, 0.79);
+  border-radius: 20px;
+}
+.banner_cons_btn:hover {
+  color: rgba(9, 46, 243, 0.79);
+  background-color: #ffffff;
+  border: 2px rgba(9, 46, 243, 0.79) solid;
+  transition: 300ms;
+}
+.banner_cons_btn:hover .arr {
+  color: rgba(9, 46, 243, 0.79);
+  transition: 300ms;
+  
+}
+
+.banner_cons_text {
+  margin-left: 22px;
+  text-align: left;
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+@media (max-width: 812px) {
+  .banner {
+    display: block;
+  }
+  .banner_large {
+    position: absolute;
+    width: 403px;
+    height: 302.34px;
+    left: -14px;
+    top: 30px;
+  }
+  .banner_large_title {
+    position: absolute;
+
+    left: 15px;
+    top: 259px;
+    margin: 0px;
+    line-height: 16px;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .banner_large_date {
+    position: absolute;
+
+    left: 15px;
+    top: 313px;
+
+    line-height: 16px;
+    font-size: 8px;
+  }
+  .banner_small{
+    z-index: 1;
+    position: absolute;
+width: 375px;
+height: 322px;
+left: 0px;
+top: 332px;
+  }
+  .banner_consultation{
+    display: none;
+  }
+  .banner_small_title {
+    position: absolute;
+     
+    left: 23px;
+    top: 584px;
+    
+    font-family: 'Cambria';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    z-index: 3;
+    /* or 100% */
+  }
+
+  .banner_small_date {
+    position: absolute;
+     z-index: 3;
+    left: 24px;
+    top: 624px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 40px;
+    /* or 500% */
+  }
+}
